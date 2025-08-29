@@ -51,6 +51,14 @@ This is a redesigned website proposal for Hospice of Ukiah, built with Next.js a
   - **Team Directory**: Complete staff and board member listings with roles
   - **Contact Call-to-Action**: Encourages visitors to reach out with questions
 
+- **Services Page**:
+  - **Program Overview**: Clear explanation of both Hospice and Palliative Care programs
+  - **Hospice Care Section**: Detailed explanation of no-prognosis-limit approach, key services, and family support
+  - **Palliative Care Section**: Description of chronic illness support and quality of life focus
+  - **Service Areas**: Geographic coverage map for Ukiah, Anderson Valley, Willits, and surrounding areas
+  - **Free Services Highlight**: Prominent callout that all services are completely free
+  - **Contact Encouragement**: Gentle invitation to call with questions
+
 ## Technology Stack
 
 - **Framework**: Next.js 15.5.2 with App Router
@@ -92,6 +100,8 @@ src/
 ├── app/
 │   ├── about/
 │   │   └── page.tsx         # Comprehensive About page with history, team, and mission
+│   ├── services/
+│   │   └── page.tsx         # Detailed Services page explaining Hospice and Palliative Care programs
 │   ├── globals.css          # Global styles, CSS variables, and text shadow utilities
 │   ├── layout.tsx           # Root layout with Header/Footer
 │   └── page.tsx             # Comprehensive homepage with hero, mission, features, qualification, testimonial, and CTA sections
