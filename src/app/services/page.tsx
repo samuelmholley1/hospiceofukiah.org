@@ -203,16 +203,14 @@ export default function Services() {
               Our Palliative Care program is for those with serious chronic illnesses who 
               may not be on hospice. This could include advanced COPD, heart failure, 
               dementia, cancer patients in treatment, etc. Palliative care is about 
-              improving quality of life by managing symptoms and stress <strong>at any stage</strong> 
-              of illness, not just the final stage. Perhaps you&apos;re undergoing treatments and have 
+              improving quality of life by managing symptoms and stress <strong>at any stage</strong> of illness, not just the final stage. Perhaps you&apos;re undergoing treatments and have 
               severe symptoms – we can help with expert advice and support.
             </p>
             
             <p>
               Our team will consult with you (often with an RN or social worker visiting) 
               to suggest comfort measures, coordinate resources like home health or medical 
-              equipment, and provide emotional/spiritual counseling as needed. You do <strong>not</strong> 
-              have to be dying to receive support – some of our palliative clients transition 
+              equipment, and provide emotional/spiritual counseling as needed. You do <strong>not</strong> have to be dying to receive support – some of our palliative clients transition 
               to hospice eventually, others actually stabilize and continue living with better comfort.
             </p>
             
@@ -299,7 +297,7 @@ export default function Services() {
           </h2>
           <p className="text-xl mb-8 text-green-100">
             If you&apos;re unsure whether you or a family member qualify for our services, 
-            <strong> give us a call</strong> at (707) 462-4038. We&apos;re here to listen and help 
+            <strong>give us a call</strong> at (707) 462-4038. We&apos;re here to listen and help 
             figure out the next steps – even if that means referring you to other programs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
