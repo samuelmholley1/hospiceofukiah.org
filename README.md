@@ -44,6 +44,13 @@ This is a redesigned website proposal for Hospice of Ukiah, built with Next.js a
   - **Testimonial**: Community impact showcase with placeholder testimonial
   - **Call-to-Action Banner**: Final conversion section encouraging donations and volunteering
 
+- **About Us Page**:
+  - **Inspirational Quote**: Dr. Cicely Saunders quote on hospice philosophy
+  - **Historical Timeline**: Visual timeline from 1980 founding to present day
+  - **Current Operations**: Who we are today, service area, and by-the-numbers stats
+  - **Team Directory**: Complete staff and board member listings with roles
+  - **Contact Call-to-Action**: Encourages visitors to reach out with questions
+
 ## Technology Stack
 
 - **Framework**: Next.js 15.5.2 with App Router
@@ -83,6 +90,8 @@ npm run dev
 ```
 src/
 ├── app/
+│   ├── about/
+│   │   └── page.tsx         # Comprehensive About page with history, team, and mission
 │   ├── globals.css          # Global styles, CSS variables, and text shadow utilities
 │   ├── layout.tsx           # Root layout with Header/Footer
 │   └── page.tsx             # Comprehensive homepage with hero, mission, features, qualification, testimonial, and CTA sections
