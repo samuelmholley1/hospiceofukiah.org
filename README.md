@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hospice of Ukiah Website
+
+A modern, responsive website for Hospice of Ukiah, providing community-supported hospice care in Mendocino County.
+
+## About the Project
+
+This is a redesigned website proposal for Hospice of Ukiah, built with Next.js and Tailwind CSS. The website features a clean, accessible design with a focus on compassionate care and community support.
+
+### Current Status
+- **Current Website**: hospiceofukiah.com
+- **Future Domain**: hospiceofukiah.org (recently acquired)
+- **Development**: Currently deployed on Vercel for review and testing
+- **Plan**: Transfer current domain to Vercel deployment, then eventually migrate to .org domain
+
+## Features
+
+- **Responsive Design**: Mobile-first approach with hamburger navigation
+- **Accessibility**: ARIA labels, semantic HTML, and keyboard navigation support
+- **Custom Branding**: 
+  - Primary color: Forest Green (#2E6D38)
+  - Secondary color: Teal Blue (#5BA8D1) 
+  - Accent color: Goldenrod (#F9A826)
+  - Typography: Open Sans for body, Playfair Display for headings
+
+- **Key Components**:
+  - Sticky header with navigation
+  - Hero section with call-to-action
+  - Service highlights
+  - Contact information in footer
+  - Social media integration
+
+## Technology Stack
+
+- **Framework**: Next.js 15.5.2 with App Router
+- **Styling**: Tailwind CSS with custom color palette
+- **Language**: TypeScript
+- **Fonts**: Google Fonts (Open Sans, Playfair Display)
+- **Deployment**: Vercel
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/samuelholley1/hospiceofukiah.org.git
+cd hospiceofukiah.org
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/
+│   ├── globals.css          # Global styles and CSS variables
+│   ├── layout.tsx           # Root layout with Header/Footer
+│   └── page.tsx             # Homepage
+├── components/
+│   ├── Header.tsx           # Navigation header with mobile menu
+│   └── Footer.tsx           # Footer with contact info and links
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact Information
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Hospice of Ukiah**
+- Address: 620 S Dora St, Suite 101, Ukiah, CA 95482
+- Phone: (707) 462-4038
+- Email: hospice.ukiah@gmail.com
+- Tax ID: 68-0248383
 
-## Deploy on Vercel
+## Development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Available Scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+### Deployment
+
+This project is set up for easy deployment on Vercel:
+
+1. Connect your GitHub repository to Vercel
+2. Vercel will automatically detect Next.js and configure the build settings
+3. Every push to main branch will trigger a new deployment
+
+## Contributing
+
+This website was designed and developed by [Samuel Holley](https://github.com/samuelholley1) as a redesign proposal for Hospice of Ukiah.
+
+## License
+
+© 2025 Hospice of Ukiah, Inc. All rights reserved.
