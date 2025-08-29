@@ -22,12 +22,27 @@ This is a redesigned website proposal for Hospice of Ukiah, built with Next.js a
   - Accent color: Goldenrod (#F9A826)
   - Typography: Open Sans for body, Playfair Display for headings
 
+## Features
+
+- **Responsive Design**: Mobile-first approach with hamburger navigation
+- **Accessibility**: ARIA labels, semantic HTML, and keyboard navigation support
+- **Custom Branding**: 
+  - Primary color: Forest Green (#2E6D38)
+  - Secondary color: Teal Blue (#5BA8D1) 
+  - Accent color: Goldenrod (#F9A826)
+  - Typography: Open Sans for body, Playfair Display for headings
+
 - **Key Components**:
-  - Sticky header with navigation
-  - Hero section with call-to-action
-  - Service highlights
-  - Contact information in footer
-  - Social media integration
+  - Sticky header with navigation and mobile hamburger menu
+  - Comprehensive footer with contact info and social media links
+
+- **Homepage Sections**:
+  - **Hero Section**: Full-width banner with mission statement and call-to-action buttons
+  - **Mission Statement**: Prominently displays organization's mission and community focus
+  - **Why Choose Us**: Three-column feature grid highlighting unique aspects (100% free services, care beyond limits, community funded)
+  - **Qualification Section**: Clear checklist of program requirements with contact prompt
+  - **Testimonial**: Community impact showcase with placeholder testimonial
+  - **Call-to-Action Banner**: Final conversion section encouraging donations and volunteering
 
 ## Technology Stack
 
@@ -68,12 +83,15 @@ npm run dev
 ```
 src/
 ├── app/
-│   ├── globals.css          # Global styles and CSS variables
+│   ├── globals.css          # Global styles, CSS variables, and text shadow utilities
 │   ├── layout.tsx           # Root layout with Header/Footer
-│   └── page.tsx             # Homepage
+│   └── page.tsx             # Comprehensive homepage with hero, mission, features, qualification, testimonial, and CTA sections
 ├── components/
 │   ├── Header.tsx           # Navigation header with mobile menu
 │   └── Footer.tsx           # Footer with contact info and links
+└── public/
+    └── images/
+        └── hero.svg         # Placeholder hero background image
 ```
 
 ## Contact Information
