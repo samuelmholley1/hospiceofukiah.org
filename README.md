@@ -47,7 +47,7 @@ This is a redesigned website proposal for Hospice of Ukiah, built with Next.js a
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/samuelholley1/hospiceofukiah.org.git
+git clone https://github.com/samuelmholley1/hospiceofukiah.org.git
 cd hospiceofukiah.org
 ```
 
@@ -103,7 +103,7 @@ This project is set up for easy deployment on Vercel:
 
 ## Contributing
 
-This website was designed and developed by [Samuel Holley](https://github.com/samuelholley1) as a redesign proposal for Hospice of Ukiah.
+This website was designed and developed by [Samuel Holley](https://github.com/samuelmholley1) as a redesign proposal for Hospice of Ukiah.
 
 ## License
 
