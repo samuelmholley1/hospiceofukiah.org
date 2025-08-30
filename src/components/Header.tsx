@@ -10,13 +10,12 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/services', label: 'Services' },
-    { href: '/grief-support', label: 'Grief Support' },
-    { href: '/volunteer', label: 'Volunteer' },
-    { href: '/contact', label: 'Contact' },
+    const navigation = [
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Services', href: '/services' },
+    { name: 'Grief Support', href: '/grief-support' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
@@ -34,13 +33,13 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
+            {navigation.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className="text-gray-700 hover:text-primary font-medium transition-colors duration-200"
               >
-                {link.label}
+                {link.name}
               </Link>
             ))}
             {/* Donate Button - Special styling */}
@@ -90,14 +89,14 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-100">
-              {navLinks.map((link) => (
+              {navigation.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   className="block px-3 py-2 text-gray-700 hover:text-primary font-medium hover:bg-gray-50 rounded-md transition-colors duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {link.label}
+                  {link.name}
                 </Link>
               ))}
               <Link
