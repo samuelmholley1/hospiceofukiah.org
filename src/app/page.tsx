@@ -58,7 +58,7 @@ export default function Home() {
             Our Sacred Mission
           </h2>
           <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-light max-w-4xl mx-auto">
-            We believe every person deserves to face life's final journey with dignity, comfort, 
+            We believe every person deserves to face life&apos;s final journey with dignity, comfort, 
             and love—regardless of their ability to pay. Through compassionate medical care, 
             emotional support, and community partnership, we honor each life while supporting 
             families through their most challenging moments.
@@ -120,7 +120,7 @@ export default function Home() {
               </h3>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Every donation stays local, directly funding care for your neighbors. 
-                We're supported by people who believe, like you, that compassionate 
+                We&apos;re supported by people who believe, like you, that compassionate 
                 end-of-life care is a community responsibility.
               </p>
             </div>
@@ -138,18 +138,18 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="bg-primary/5 rounded-2xl p-8 border-l-4 border-primary">
               <blockquote className="text-xl italic text-gray-800 mb-6 leading-relaxed">
-                "Hospice of Ukiah gave us the gift of time—time to say goodbye properly, 
+                &ldquo;Hospice of Ukiah gave us the gift of time—time to say goodbye properly, 
                 time to share stories, time to love without the burden of medical bills. 
-                Their care allowed us to focus on what truly mattered."
+                Their care allowed us to focus on what truly mattered.&rdquo;
               </blockquote>
               <p className="text-lg font-semibold text-primary">— Sarah M., Grateful Family Member</p>
             </div>
 
             <div className="bg-secondary/5 rounded-2xl p-8 border-l-4 border-secondary">
               <blockquote className="text-xl italic text-gray-800 mb-6 leading-relaxed">
-                "The compassion and professionalism of the entire team made an impossible 
+                &ldquo;The compassion and professionalism of the entire team made an impossible 
                 time bearable. They treated my father—and our whole family—with such dignity 
-                and grace."
+                and grace.&rdquo;
               </blockquote>
               <p className="text-lg font-semibold text-primary">— Michael R., Community Member</p>
             </div>
@@ -165,7 +165,7 @@ export default function Home() {
           </h2>
           <p className="text-xl md:text-2xl font-light mb-12 max-w-4xl mx-auto opacity-95">
             Every donation ensures another family receives compassionate, dignified end-of-life care 
-            without financial worry. Your generosity makes miracles possible when they're needed most.
+            without financial worry. Your generosity makes miracles possible when they&apos;re needed most.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a

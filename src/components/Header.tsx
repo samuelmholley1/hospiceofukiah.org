@@ -18,6 +18,7 @@ const Header = () => {
     { name: 'Grief Support', href: '/grief-support' },
     { name: 'Volunteer', href: '/volunteer' },
     { name: 'Contact', href: '/contact' },
+    { name: 'Future Features', href: '/future-functionalities' },
   ];
 
   return (
@@ -110,7 +111,7 @@ const Header = () => {
               ))}
               <Link
                 href="/donate"
-                className="block px-3 py-2 bg-accent text-white font-semibold rounded-md hover:bg-opacity-90 transition-colors duration-200"
+                className="block px-3 py-2 bg-primary text-white font-semibold rounded-md hover:bg-opacity-90 transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Donate

@@ -85,7 +85,7 @@ export default function GriefSupport() {
                   </div>
                   
                   <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
                       <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                       </svg>
@@ -94,7 +94,7 @@ export default function GriefSupport() {
                   </div>
                   
                   <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
                       <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732L14.146 12.8l-1.179 4.456a1 1 0 01-1.934 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732L9.854 7.2l1.179-4.456A1 1 0 0112 2z" clipRule="evenodd" />
                       </svg>
@@ -168,7 +168,7 @@ export default function GriefSupport() {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clipRule="evenodd" />
                     </svg>
@@ -180,7 +180,7 @@ export default function GriefSupport() {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                     </svg>
@@ -247,7 +247,7 @@ export default function GriefSupport() {
               </div>
               
               <div className="bg-neutral-bg rounded-lg p-6">
-                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
                   </svg>
@@ -283,7 +283,7 @@ export default function GriefSupport() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:+17074624038"
-              className="bg-accent hover:bg-accent/90 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="bg-secondary hover:bg-secondary/90 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               Call (707) 462-4038
             </a>

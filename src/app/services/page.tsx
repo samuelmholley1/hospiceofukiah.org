@@ -17,7 +17,7 @@ export default function Services() {
       </section>
 
       {/* Free Services Highlight */}
-      <section className="py-8 px-4 bg-accent">
+      <section className="py-8 px-4 bg-secondary">
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-white rounded-lg p-6 shadow-lg">
             <h2 className="text-2xl font-bold text-primary mb-4">
@@ -103,7 +103,7 @@ export default function Services() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
                       <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clipRule="evenodd" />
                       </svg>
@@ -115,7 +115,7 @@ export default function Services() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
                       <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zM8 6V5a2 2 0 114 0v1H8zm.707 6.293a1 1 0 00-1.414 1.414L8.586 15l-1.293 1.293a1 1 0 101.414 1.414L10 16.414l1.293 1.293a1 1 0 001.414-1.414L11.414 15l1.293-1.293a1 1 0 00-1.414-1.414L10 13.586l-1.293-1.293z" clipRule="evenodd" />
                       </svg>
@@ -127,7 +127,7 @@ export default function Services() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
                       <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                       </svg>
@@ -139,7 +139,7 @@ export default function Services() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
                       <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
                       </svg>
@@ -179,7 +179,7 @@ export default function Services() {
                     <span>Home, hospital, or facility</span>
                   </li>
                 </ul>
-                <div className="mt-6 p-4 bg-accent/10 rounded-lg">
+                <div className="mt-6 p-4 bg-white rounded-lg border border-secondary/20">
                   <p className="text-sm font-semibold text-primary text-center">
                     100% Free<br />
                     No Insurance Required
@@ -303,7 +303,7 @@ export default function Services() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:+17074624038"
-              className="bg-accent hover:bg-accent/90 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="bg-secondary hover:bg-secondary/90 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               Call (707) 462-4038
             </a>

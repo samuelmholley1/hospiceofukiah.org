@@ -8,7 +8,7 @@ export default function About() {
             About Us
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            For over 40 years, Hospice of Ukiah has been providing compassionate, 
+            For over 45 years, Hospice of Ukiah has been providing compassionate, 
             community-supported hospice care to families throughout Mendocino County.
           </p>
         </div>
@@ -73,7 +73,7 @@ export default function About() {
 
             {/* 2000s - Expanded Services */}
             <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-              <div className="flex-shrink-0 w-24 h-24 bg-accent rounded-full flex items-center justify-center">
+              <div className="flex-shrink-0 w-24 h-24 bg-secondary rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-lg">2000s</span>
               </div>
               <div className="flex-1 bg-white rounded-lg p-6 shadow-sm">
@@ -94,9 +94,9 @@ export default function About() {
               <div className="flex-1 bg-white rounded-lg p-6 shadow-sm">
                 <h3 className="text-xl font-bold text-primary mb-3">Continuing the Mission</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  For over 40 years, Hospice of Ukiah has helped hundreds of patients live their final chapters 
+                  For over 45 years, Hospice of Ukiah has helped hundreds of patients live their final chapters 
                   in comfort and dignity, surrounded by family and friends. Supported solely by donations and 
-                  our Thrift & Gift Store, we remain a true community hospice.
+                  our Thrift & Gift Store (currently closed, pending board evaluation), we remain a true community hospice.
                 </p>
               </div>
             </div>
@@ -148,19 +148,19 @@ export default function About() {
               <h3 className="text-2xl font-bold text-primary mb-6 text-center">By the Numbers</h3>
               <div className="grid grid-cols-2 gap-6 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-accent mb-2">40+</div>
+                  <div className="text-3xl font-bold text-secondary mb-2">45+</div>
                   <div className="text-gray-700">Years of Service</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-accent mb-2">~20</div>
+                  <div className="text-3xl font-bold text-secondary mb-2">~20</div>
                   <div className="text-gray-700">Current Patients</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-accent mb-2">100%</div>
+                  <div className="text-3xl font-bold text-secondary mb-2">100%</div>
                   <div className="text-gray-700">Community Funded</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-accent mb-2">0</div>
+                  <div className="text-3xl font-bold text-secondary mb-2">0</div>
                   <div className="text-gray-700">Cost to Families</div>
                 </div>
               </div>
@@ -264,7 +264,7 @@ export default function About() {
             <h3 className="text-2xl font-bold text-primary mb-8 text-center">Board of Directors</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-white rounded-lg p-6 shadow-sm text-center">
-                <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white font-bold text-xl">KS</span>
                 </div>
                 <h4 className="text-lg font-bold text-primary mb-1">Kimberly Smith</h4>
@@ -272,7 +272,7 @@ export default function About() {
               </div>
 
               <div className="bg-white rounded-lg p-6 shadow-sm text-center">
-                <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white font-bold text-xl">BL</span>
                 </div>
                 <h4 className="text-lg font-bold text-primary mb-1">Brian Locatelli</h4>
@@ -280,7 +280,7 @@ export default function About() {
               </div>
 
               <div className="bg-white rounded-lg p-6 shadow-sm text-center">
-                <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white font-bold text-xl">JJ</span>
                 </div>
                 <h4 className="text-lg font-bold text-primary mb-1">Dr. Jay Joseph</h4>
@@ -288,7 +288,7 @@ export default function About() {
               </div>
 
               <div className="bg-white rounded-lg p-6 shadow-sm text-center">
-                <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white font-bold text-xl">SB</span>
                 </div>
                 <h4 className="text-lg font-bold text-primary mb-1">Susan Bridge-Mount</h4>
@@ -296,7 +296,7 @@ export default function About() {
               </div>
 
               <div className="bg-white rounded-lg p-6 shadow-sm text-center">
-                <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white font-bold text-xl">MD</span>
                 </div>
                 <h4 className="text-lg font-bold text-primary mb-1">Mark Davis</h4>
@@ -304,7 +304,7 @@ export default function About() {
               </div>
 
               <div className="bg-white rounded-lg p-6 shadow-sm text-center">
-                <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white font-bold text-xl">KR</span>
                 </div>
                 <h4 className="text-lg font-bold text-primary mb-1">Kerry Randall</h4>
@@ -334,7 +334,7 @@ export default function About() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/contact"
-              className="bg-accent hover:bg-accent/90 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="bg-secondary hover:bg-secondary/90 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               Contact Us
             </a>

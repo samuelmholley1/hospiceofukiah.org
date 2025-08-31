@@ -8,7 +8,7 @@ export default function Donate() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-accent/10 to-white">
+      <section className="py-20 px-4 bg-gradient-to-b from-secondary/10 to-white">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8">
             Donate
