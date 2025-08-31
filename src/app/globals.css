@@ -1,12 +1,12 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 :root {
-  /* Hospice of Ukiah Color Palette */
-  --primary: #2E6D38;      /* Forest Green */
-  --secondary: #5BA8D1;    /* Teal Blue */
-  --accent: #F9A826;       /* Goldenrod */
-  --neutral-bg: #F7F7F7;   /* Light neutral background */
+  /* Hospice of Ukiah Official Color Palette */
+  --primary: #ae485e;      /* Maroon Rose */
+  --secondary: #abb0d3;    /* Lavender */
+  --accent: #ae485e;       /* Using primary for accent */
+  --neutral-bg: #feffff;   /* Off-white neutral background */
   --text: #333333;         /* Charcoal text */
   --white: #ffffff;
 }
@@ -16,7 +16,7 @@ body {
   color: var(--text);
   font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.7;
   margin: 0;
   padding: 0;
 }
@@ -44,46 +44,58 @@ button {
 }
 
 .btn-primary {
-  background-color: var(--accent);
+  background-color: var(--primary);
   color: white;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
 }
 
 .btn-primary:hover {
-  background-color: #E6971F; /* Slightly darker goldenrod */
+  background-color: #954055; /* Slightly darker maroon */
+  text-decoration: none;
 }
 
 .btn-secondary {
-  background-color: var(--primary);
+  background-color: var(--secondary);
   color: white;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
 }
 
 .btn-secondary:hover {
-  background-color: #245A2D; /* Slightly darker forest green */
+  background-color: #9ba4c7; /* Slightly darker lavender */
+  text-decoration: none;
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
   font-weight: 700;
   color: var(--text);
-  line-height: 1.2;
-  margin-bottom: 1rem;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 900;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.25rem;
+  font-weight: 700;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 /* Utility classes */
@@ -109,19 +121,6 @@ h4 {
 
 .bg-accent {
   background-color: var(--accent);
-}
-
-/* Text shadow utilities */
-.text-shadow-sm {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.text-shadow-md {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-.text-shadow-lg {
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
 /* Text shadow utilities for hero section */

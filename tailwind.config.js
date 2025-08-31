@@ -8,15 +8,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#2E6D38',      // Forest Green
-        secondary: '#5BA8D1',    // Teal Blue
-        accent: '#F9A826',       // Goldenrod
-        'neutral-bg': '#F7F7F7', // Light neutral background
+        primary: '#ae485e',      // Maroon Rose (official brand)
+        secondary: '#abb0d3',    // Lavender (official brand)
+        accent: '#ae485e',       // Using primary for accent
+        'neutral-bg': '#feffff', // Off-white neutral background
         text: '#333333',         // Charcoal text
       },
       fontFamily: {
         sans: ['Open Sans', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
-        serif: ['Playfair Display', 'Georgia', 'Times New Roman', 'serif'],
+        serif: ['Merriweather', 'Georgia', 'Times New Roman', 'serif'],
       },
     },
   },
