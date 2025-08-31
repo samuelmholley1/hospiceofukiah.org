@@ -1,0 +1,21 @@
+{
+  "name": "Hospice of Ukiah",
+  "short_name": "Hospice of Ukiah",
+  "description": "Providing compassionate hospice care to Mendocino County. Professional medical care, emotional support, and grief counseling services.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2E6D38",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png", 
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
