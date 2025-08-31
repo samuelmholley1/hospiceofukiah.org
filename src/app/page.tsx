@@ -20,6 +20,15 @@ export default function Home() {
         
         {/* Hero Content */}
         <div className="relative z-10 text-center text-white max-w-6xl mx-auto px-4">
+          <div className="flex justify-center mb-6">
+            <Image 
+              src="/hospice-ukiah-icon.png" 
+              alt="Hospice of Ukiah" 
+              width={80} 
+              height={80}
+              className="rounded-xl shadow-lg"
+            />
+          </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 text-shadow-lg">
             Hospice of Ukiah
           </h1>

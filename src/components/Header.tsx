@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +26,14 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-primary hover:no-underline">
+            <Link href="/" className="text-primary hover:no-underline flex items-center space-x-3">
+              <Image 
+                src="/hospice-ukiah-icon.png" 
+                alt="Hospice of Ukiah" 
+                width={40} 
+                height={40}
+                className="rounded-lg"
+              />
               <h1 className="text-2xl font-serif font-bold text-primary mb-0">
                 Hospice of Ukiah
               </h1>
