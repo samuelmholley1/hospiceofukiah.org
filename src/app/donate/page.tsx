@@ -494,7 +494,7 @@ export default function Donate() {
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-8">
             Thank You
           </h2>
-          <p className="text-xl leading-relaxed text-green-100">
+          <p className="text-xl leading-relaxed text-white/90">
             <strong>Thank you</strong> for your support. You are truly a partner in our mission. 
             Together, we ensure that our friends and neighbors can face the end of life with 
             comfort, dignity, and love.

@@ -184,7 +184,7 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
                   />
                 </div>
                 
@@ -293,7 +293,7 @@ export default function Contact() {
           <h2 className="text-3xl font-serif font-bold mb-6">
             We&apos;d Love to Hear From You
           </h2>
-          <p className="text-xl leading-relaxed text-green-100">
+          <p className="text-xl leading-relaxed text-white/90">
             Whether you have a question about our services, need grief support, or want to explore 
             volunteering or donating, we&apos;d love to hear from you. Our compassionate team is here 
             to help in any way we can.

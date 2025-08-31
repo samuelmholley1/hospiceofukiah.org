@@ -327,7 +327,7 @@ export default function About() {
           <h2 className="text-3xl font-serif font-bold mb-6">
             Have Questions?
           </h2>
-          <p className="text-xl mb-8 text-green-100">
+          <p className="text-xl mb-8 text-white/90">
             We&apos;re here to help you understand our services and how we can support 
             you and your family during difficult times.
           </p>

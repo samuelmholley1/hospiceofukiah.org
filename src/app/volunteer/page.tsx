@@ -419,7 +419,7 @@ export default function Volunteer() {
           <h2 className="text-3xl font-serif font-bold mb-6">
             Questions Before Applying?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-white/90">
             If you have any questions before applying, feel free to call us. We love talking to potential volunteers!
           </p>
           <a

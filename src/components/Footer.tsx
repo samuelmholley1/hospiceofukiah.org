@@ -10,10 +10,10 @@ const Footer = () => {
             <h3 className="text-xl font-serif font-bold text-white mb-4">
               Hospice of Ukiah
             </h3>
-            <p className="text-green-100 leading-relaxed">
+            <p className="text-white/80 leading-relaxed">
               Community-Supported Hospice Care in Mendocino County
             </p>
-            <div className="space-y-2 text-sm text-green-100">
+            <div className="space-y-2 text-sm text-white/70">
               <p>Tax ID # 68-0248383</p>
               <p>© 2025 Hospice of Ukiah, Inc.</p>
             </div>
@@ -22,10 +22,10 @@ const Footer = () => {
           {/* Contact Information */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-white mb-4">Contact Us</h4>
-            <div className="space-y-3 text-green-100">
+            <div className="space-y-3 text-white/80">
               <div className="flex items-start space-x-3">
                 <svg 
-                  className="w-5 h-5 mt-0.5 flex-shrink-0" 
+                  className="w-5 h-5 mt-0.5 flex-shrink-0 text-white/90" 
                   fill="currentColor" 
                   viewBox="0 0 20 20"
                 >
@@ -43,7 +43,7 @@ const Footer = () => {
               
               <div className="flex items-center space-x-3">
                 <svg 
-                  className="w-5 h-5 flex-shrink-0" 
+                  className="w-5 h-5 flex-shrink-0 text-white/90" 
                   fill="currentColor" 
                   viewBox="0 0 20 20"
                 >
@@ -61,7 +61,7 @@ const Footer = () => {
               
               <div className="flex items-center space-x-3">
                 <svg 
-                  className="w-5 h-5 flex-shrink-0" 
+                  className="w-5 h-5 flex-shrink-0 text-white/90" 
                   fill="currentColor" 
                   viewBox="0 0 20 20"
                 >
@@ -90,7 +90,7 @@ const Footer = () => {
                 href="https://facebook.com/hospiceofukiah"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-green-100 hover:text-white transition-colors duration-200"
+                className="text-white/80 hover:text-white transition-colors duration-200 p-2 rounded-lg hover:bg-white/10"
                 aria-label="Visit our Facebook page"
               >
                 <svg 
@@ -110,19 +110,19 @@ const Footer = () => {
               <div className="space-y-2">
                 <Link 
                   href="/volunteer" 
-                  className="block text-green-100 hover:text-white transition-colors duration-200"
+                  className="block text-white/80 hover:text-white transition-colors duration-200 py-1 px-2 rounded hover:bg-white/10"
                 >
                   Volunteer Opportunities
                 </Link>
                 <Link 
                   href="/donate" 
-                  className="block text-green-100 hover:text-white transition-colors duration-200"
+                  className="block text-white/80 hover:text-white transition-colors duration-200 py-1 px-2 rounded hover:bg-white/10"
                 >
                   Make a Donation
                 </Link>
                 <Link 
                   href="/grief-support" 
-                  className="block text-green-100 hover:text-white transition-colors duration-200"
+                  className="block text-white/80 hover:text-white transition-colors duration-200 py-1 px-2 rounded hover:bg-white/10"
                 >
                   Grief Support Resources
                 </Link>
@@ -132,18 +132,18 @@ const Footer = () => {
         </div>
         
         {/* Bottom Border */}
-        <div className="mt-8 pt-8 border-t border-green-600">
+        <div className="mt-8 pt-8 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm text-green-100">
+            <p className="text-sm text-white/70">
               Providing compassionate hospice care to our community since our founding.
             </p>
-            <p className="text-sm text-green-100">
+            <p className="text-sm text-white/70">
               Website by{' '}
               <a 
                 href="https://github.com/samuelholley1" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="hover:text-white transition-colors duration-200"
+                className="hover:text-white transition-colors duration-200 underline"
               >
                 Samuel Holley
               </a>

@@ -295,7 +295,7 @@ export default function Services() {
           <h2 className="text-3xl font-serif font-bold mb-6">
             Unsure if You Qualify?
           </h2>
-          <p className="text-xl mb-8 text-green-100">
+          <p className="text-xl mb-8 text-white/90">
             If you&apos;re unsure whether you or a family member qualify for our services, 
             <strong>give us a call</strong> at (707) 462-4038. We&apos;re here to listen and help 
             figure out the next steps – even if that means referring you to other programs.
