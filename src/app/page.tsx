@@ -4,49 +4,53 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-primary/10 to-secondary/20">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
+      <section className="grid grid-cols-1 lg:grid-cols-2">
+        {/* LEFT: Image */}
+        <div className="relative min-h-[420px] lg:min-h-[560px]">
           <Image
-            src="/images/hero.svg"
-            alt="Compassionate hospice care"
+            src="/hands_hero_image.jpg"
+            alt="Two hands clasped together, symbolizing compassionate hospice support."
             fill
-            className="object-cover"
             priority
+            sizes="(min-width:1024px) 50vw, 100vw"
+            className="object-cover object-center lg:object-left-center"
           />
-          <div className="absolute inset-0 bg-black/50"></div>
+          {/* Mobile-only subtle gradient overlay for text contrast */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-transparent lg:from-transparent"></div>
         </div>
-        
-        {/* Hero Content */}
-        <div className="relative z-10 text-center text-white max-w-6xl mx-auto px-4">
-          <div className="flex justify-center mb-8">
-            <Image 
-              src="/hospice-ukiah-icon.png" 
-              alt="Hospice of Ukiah" 
-              width={100} 
-              height={100}
-              className="rounded-xl shadow-2xl"
-            />
-          </div>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-black mb-8 text-shadow-lg">
-            Hospice of Ukiah
-          </h1>
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-serif font-light mb-8 text-shadow-md opacity-95">
-            Compassionate End-of-Life Care, Free of Charge
-          </h2>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mt-12">
-            <a
-              href="/donate"
-              className="btn-primary text-xl px-10 py-4 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300"
-            >
-              Donate Now
-            </a>
-            <a
-              href="/about"
-              className="btn-secondary text-xl px-10 py-4 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300"
-            >
-              Learn More
-            </a>
+
+        {/* RIGHT: Text */}
+        <div className="flex items-center justify-center px-6 py-10 lg:p-12 bg-white">
+          <div className="max-w-xl">
+            <div className="flex justify-center mb-8 lg:justify-start">
+              <Image 
+                src="/hospice-ukiah-icon.png" 
+                alt="Hospice of Ukiah" 
+                width={100} 
+                height={100}
+                className="rounded-xl shadow-2xl"
+              />
+            </div>
+            <h1 className="text-4xl lg:text-5xl font-serif font-bold text-primary mb-6 text-center lg:text-left">
+              Hospice of Ukiah
+            </h1>
+            <h2 className="text-xl lg:text-2xl font-serif font-light text-gray-700 mb-8 text-center lg:text-left leading-relaxed">
+              Compassionate End-of-Life Care, Free of Charge
+            </h2>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <a
+                href="/donate"
+                className="btn-primary text-lg px-8 py-4 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary/30"
+              >
+                Donate Now
+              </a>
+              <a
+                href="/about"
+                className="btn-secondary text-lg px-8 py-4 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-secondary/30"
+              >
+                Learn More
+              </a>
+            </div>
           </div>
         </div>
       </section>
