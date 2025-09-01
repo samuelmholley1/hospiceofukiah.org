@@ -35,8 +35,8 @@ const Header = () => {
                 height={48}
                 className="rounded-lg shadow-sm"
               />
-              <div className="hidden sm:block">
-                <h1 className="text-2xl font-serif font-bold text-primary leading-tight">
+              <div className="hidden sm:flex items-center">
+                <h1 className="text-2xl font-serif font-bold text-primary leading-none">
                   Hospice of Ukiah
                 </h1>
               </div>

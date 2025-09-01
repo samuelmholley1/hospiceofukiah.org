@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen lg:h-screen min-h-[70vh] flex items-center">
+      <section className="relative min-h-[80vh] lg:min-h-screen flex items-center">
         {/* Background Image */}
         <Image
           src="/redwood_clapsed_hands.png"
@@ -12,36 +12,54 @@ export default function Home() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center lg:object-bottom"
+          className="object-cover object-center"
         />
         
-        {/* Subtle left-to-right dark gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/20"></div>
+        {/* Strategic Shaded Overlay - Darker on left where text sits */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/20 lg:from-black/75 lg:via-black/40 lg:to-transparent"></div>
         
-        {/* Content Overlay - Left Side */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="max-w-2xl text-center lg:text-left">
-            {/* Heading */}
-            <h1 className="text-5xl font-bold text-white mb-6 text-shadow-lg">
+        {/* Additional subtle overall overlay for better contrast */}
+        <div className="absolute inset-0 bg-black/20"></div>
+        
+        {/* Content Positioned in Left Half */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
+          <div className="max-w-2xl lg:max-w-xl">
+            {/* Logo */}
+            <div className="flex justify-center lg:justify-start mb-8">
+              <Image 
+                src="/hospice-ukiah-icon.png" 
+                alt="Hospice of Ukiah" 
+                width={100} 
+                height={100}
+                className="rounded-xl shadow-2xl"
+              />
+            </div>
+            
+            {/* Heading with Enhanced Text Shadow */}
+            <h1 className="text-4xl lg:text-6xl xl:text-7xl font-serif font-bold text-white mb-6 text-center lg:text-left" 
+                style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.6)'}}>
               Hospice of Ukiah
             </h1>
             
-            {/* Subheading */}
-            <h2 className="text-xl text-gray-100 mb-8 leading-relaxed text-shadow-md">
+            {/* Subheading with Strong Contrast */}
+            <h2 className="text-xl lg:text-2xl xl:text-3xl font-serif font-light text-white mb-10 leading-relaxed text-center lg:text-left" 
+                style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8), 0 0 6px rgba(0,0,0,0.6)'}}>
               Compassionate End-of-Life Care, Free of Charge
             </h2>
             
-            {/* Buttons */}
+            {/* Buttons with Enhanced Shadows */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
                 href="/donate"
-                className="bg-[#B04155] hover:bg-[#9a3849] text-white font-bold text-lg px-10 py-5 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#B04155]/30"
+                className="btn-primary text-lg px-8 py-4 rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary/50"
+                style={{boxShadow: '0 8px 25px rgba(0,0,0,0.3), 0 4px 10px rgba(174, 72, 94, 0.2)'}}
               >
                 Donate Now
               </a>
               <a
                 href="/about"
-                className="bg-[#8C8DBF] hover:bg-[#7a7baa] text-white font-semibold text-lg px-10 py-5 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#8C8DBF]/30"
+                className="btn-secondary text-lg px-8 py-4 rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-secondary/50 border-2 border-white/30"
+                style={{boxShadow: '0 8px 25px rgba(0,0,0,0.3), 0 4px 10px rgba(171, 176, 211, 0.2)'}}
               >
                 Learn More
               </a>
