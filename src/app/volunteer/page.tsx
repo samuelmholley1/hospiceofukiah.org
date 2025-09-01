@@ -70,7 +70,7 @@ export default function Volunteer() {
       {/* Hero Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-neutral-bg to-white relative">
         {/* Background image */}
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-30">
           <Image
             src="/pexel downloads/pexels-vlada-karpovich-5790718.jpg"
             alt="Volunteer helping in community"
@@ -78,6 +78,7 @@ export default function Volunteer() {
             className="object-cover"
           />
         </div>
+        <div className="absolute inset-0 bg-white/70"></div>
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8">
             Volunteer with Us
@@ -102,68 +103,132 @@ export default function Volunteer() {
             Current Volunteer Needs
           </h2>
           
-          <div className="space-y-12">
+          <div className="space-y-16">
             {/* Respite Care Volunteers */}
-            <div className="bg-neutral-bg rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-accent mb-4 flex items-center">
-                <svg className="w-8 h-8 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
-                </svg>
-                Respite Care Volunteers
-              </h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Spend time with hospice patients to give their family caregivers a much-needed break. 
-                You might read to a patient, listen to their stories, or simply sit with them so their 
-                loved one can run an errand or rest. Training is provided, and you will always have 
-                support from our team. This role typically involves 2-4 hours per week (flexible).
-              </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="bg-neutral-bg rounded-xl p-8">
+                <h3 className="text-2xl font-bold text-accent mb-4 flex items-center">
+                  <svg className="w-8 h-8 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
+                  </svg>
+                  Respite Care Volunteers
+                </h3>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Spend time with hospice patients to give their family caregivers a much-needed break. 
+                  You might read to a patient, listen to their stories, or simply sit with them so their 
+                  loved one can run an errand or rest. Training is provided, and you will always have 
+                  support from our team. This role typically involves 2-4 hours per week (flexible).
+                </p>
+              </div>
+              
+              <div className="relative">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                  <Image
+                    src="/pexel downloads/pexels-ron-lach-8527647.jpg"
+                    alt="Volunteer providing compassionate respite care"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
             </div>
 
-            {/* Thrift & Gift Store Volunteers */}
-            <div className="bg-neutral-bg rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-secondary mb-4 flex items-center">
-                <svg className="w-8 h-8 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
-                </svg>
-                Thrift & Gift Store Volunteers
-              </h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Help our fundraising efforts by volunteering at our Thrift & Gift store. Tasks include 
-                sorting donations, pricing items, arranging displays, or customer service. <strong>Note: 
-                The store is currently on pause as we reorganize, but we are gathering a list of interested 
-                volunteers so we can hit the ground running when it reopens!</strong>
-              </p>
+            {/* Community Support */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="relative order-2 lg:order-1">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                  <Image
+                    src="/pexel downloads/pexels-vlada-karpovich-5790718.jpg"
+                    alt="Volunteers working together in community"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+              
+              <div className="bg-neutral-bg rounded-xl p-8 order-1 lg:order-2">
+                <h3 className="text-2xl font-bold text-secondary mb-4 flex items-center">
+                  <svg className="w-8 h-8 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+                  </svg>
+                  Community Support
+                </h3>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Help our fundraising efforts by volunteering at our Thrift & Gift store or community events. 
+                  Tasks include sorting donations, pricing items, arranging displays, or customer service. 
+                  <strong>Note: The store is currently on pause as we reorganize, but we are gathering a list 
+                  of interested volunteers so we can hit the ground running when it reopens!</strong>
+                </p>
+              </div>
             </div>
 
             {/* Board Members / Committee Volunteers */}
-            <div className="bg-neutral-bg rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-primary mb-4 flex items-center">
-                <svg className="w-8 h-8 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
-                </svg>
-                Board Members / Committee Volunteers
-              </h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Join our Board of Directors or a special project committee to guide the hospice&apos;s 
-                mission. Board members typically contribute ~4 hours per month to attend meetings and 
-                provide oversight. We welcome individuals with skills in nonprofit governance, finance, 
-                fundraising, or community advocacy. (Board positions are unpaid volunteer roles.)
-              </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="bg-neutral-bg rounded-xl p-8">
+                <h3 className="text-2xl font-bold text-primary mb-4 flex items-center">
+                  <svg className="w-8 h-8 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
+                  </svg>
+                  Leadership & Governance
+                </h3>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Join our Board of Directors or a special project committee to guide the hospice&apos;s 
+                  mission. Board members typically contribute ~4 hours per month to attend meetings and 
+                  provide oversight. We welcome individuals with skills in nonprofit governance, finance, 
+                  marketing, or community outreach.
+                </p>
+              </div>
+              
+              <div className="relative">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                  <Image
+                    src="/pexel downloads/pexels-kampus-7551633.jpg"
+                    alt="Board members and volunteers in meeting"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Other Skills */}
-            <div className="bg-neutral-bg rounded-xl p-8">
+      {/* Other Skills Section */}
+      <section className="py-20 px-4 bg-neutral-bg">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="relative order-2 lg:order-1">
+              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/pexel downloads/pexels-pavel-danilyuk-6753450.jpg"
+                  alt="Volunteers using special skills to help"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-xl p-8 order-1 lg:order-2">
               <h3 className="text-2xl font-bold text-accent mb-4 flex items-center">
                 <svg className="w-8 h-8 mr-3" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
                 </svg>
-                Other Skills
+                Special Skills Welcome
               </h3>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Have a special skill to offer? Volunteers have helped with office work, event planning, 
                 graphic design, gardening for patients, and more. Let us know how you&apos;d like to 
                 contribute – we likely have a place for you.
               </p>
+              <div className="mt-6 grid grid-cols-2 gap-4 text-sm text-gray-600">
+                <div>• Office administration</div>
+                <div>• Event planning</div>
+                <div>• Graphic design</div>
+                <div>• Gardening & landscaping</div>
+                <div>• Photography</div>
+                <div>• Technology support</div>
+              </div>
             </div>
           </div>
         </div>
