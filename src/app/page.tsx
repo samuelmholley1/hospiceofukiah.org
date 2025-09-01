@@ -102,7 +102,7 @@ export default function Home() {
             
             {/* Text Content - Centered with logo */}
             <div className="flex-1 text-center lg:text-left lg:pt-8 max-w-2xl">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-4">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-primary mb-4">
                 Hospice of Ukiah
               </h2>
               <p className="text-lg md:text-xl lg:text-2xl text-gray-600 font-light">
@@ -116,7 +116,7 @@ export default function Home() {
       {/* Mission Statement */}
       <section className="py-24 px-4 bg-white">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8">
+          <h2 className="text-5xl md:text-6xl font-serif font-bold text-primary mb-8">
             Our Mission
           </h2>
           <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-light max-w-4xl mx-auto mb-8">
@@ -131,7 +131,7 @@ export default function Home() {
       {/* Do You Qualify Section */}
       <section className="py-24 px-4 bg-neutral-bg">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-16 text-center">
+          <h2 className="text-5xl md:text-6xl font-serif font-bold text-primary mb-16 text-center">
             Do You Qualify for Our Hospice Program?
           </h2>
           
@@ -181,7 +181,7 @@ export default function Home() {
       {/* Why Choose Hospice of Ukiah */}
       <section className="py-24 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-16 text-center">
+          <h2 className="text-5xl md:text-6xl font-serif font-bold text-primary mb-16 text-center">
             Why Choose Hospice of Ukiah?
           </h2>
           
@@ -323,7 +323,7 @@ export default function Home() {
       {/* Testimonials */}
       <section className="py-24 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-16 text-center">
+          <h2 className="text-5xl md:text-6xl font-serif font-bold text-primary mb-16 text-center">
             Voices from Our Community
           </h2>
           
@@ -370,7 +370,7 @@ export default function Home() {
       {/* Contact Information */}
       <section className="py-24 px-4 bg-neutral-bg">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-16 text-center">
+          <h2 className="text-5xl md:text-6xl font-serif font-bold text-primary mb-16 text-center">
             Contact Us
           </h2>
           
@@ -461,7 +461,7 @@ export default function Home() {
       {/* Donate Call-to-Action Strip */}
       <section className="py-20 px-4 bg-primary text-white">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8">
+          <h2 className="text-5xl md:text-6xl font-serif font-bold mb-8">
             Your Gift Transforms Lives
           </h2>
           <p className="text-xl md:text-2xl font-light mb-12 max-w-4xl mx-auto opacity-95">
