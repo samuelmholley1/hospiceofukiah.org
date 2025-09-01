@@ -18,16 +18,48 @@ const Header = () => {
     { name: 'Grief Support', href: '/grief-support' },
     { name: 'Volunteer', href: '/volunteer' },
     { name: 'Contact', href: '/contact' },
-    { name: 'Future Features', href: '/future-functionalities' },
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm border-b border-gray-100">
+    <>
+      {/* Top Utility Bar - Contact Info */}
+      <div className="py-2 text-sm" style={{backgroundColor: '#ae485e', color: '#ffffff'}}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-center lg:justify-end items-center space-x-6">
+            <a 
+              href="tel:7074624038" 
+              className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
+              style={{color: '#ffffff'}}
+            >
+              <svg className="w-4 h-4" fill="#ffffff" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg>
+              <span style={{color: '#ffffff'}}>(707) 462-4038</span>
+            </a>
+            <span className="hidden sm:inline" style={{color: 'rgba(255,255,255,0.6)'}}>|</span>
+            <a 
+              href="mailto:hospice.ukiah@gmail.com" 
+              className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
+              style={{color: '#ffffff'}}
+            >
+              <svg className="w-4 h-4" fill="#ffffff" viewBox="0 0 20 20">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+              <span className="hidden sm:inline" style={{color: '#ffffff'}}>hospice.ukiah@gmail.com</span>
+              <span className="sm:hidden" style={{color: '#ffffff'}}>Email</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Header */}
+      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24">
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-primary hover:no-underline flex items-center space-x-4">
+            <Link href="/" className="text-primary hover:no-underline flex items-center space-x-4 h-full">
               <Image 
                 src="/hospice-ukiah-icon.png" 
                 alt="Hospice of Ukiah" 
@@ -35,30 +67,31 @@ const Header = () => {
                 height={48}
                 className="rounded-lg shadow-sm"
               />
-              <div className="hidden sm:flex items-center">
-                <h1 className="text-2xl font-serif font-bold text-primary leading-none">
+              <div className="hidden sm:flex items-center h-full">
+                <span className="text-2xl font-serif font-bold text-primary leading-none m-0 p-0" style={{margin: '0', padding: '0', lineHeight: '1'}}>
                   Hospice of Ukiah
-                </h1>
+                </span>
               </div>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-1">
+          <nav className="hidden lg:flex items-center space-x-1 h-full">
             {navigation.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 hover:text-primary font-medium transition-colors duration-200 py-3 px-4 rounded-lg hover:bg-gray-50"
+                className="text-gray-700 hover:text-primary font-medium transition-colors duration-200 py-3 px-4 rounded-lg hover:bg-gray-50 flex items-center h-full"
               >
                 {link.name}
               </Link>
             ))}
             {/* Donate Button - Special styling */}
-            <div className="ml-6">
+            <div className="ml-6 flex items-center h-full">
               <Link
                 href="/donate"
-                className="bg-primary hover:bg-primary/90 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md"
+                className="bg-primary hover:bg-primary/90 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md flex items-center"
+                style={{color: 'white !important'}}
               >
                 Donate
               </Link>
@@ -66,7 +99,7 @@ const Header = () => {
           </nav>
 
           {/* Mobile menu button */}
-          <div className="lg:hidden">
+          <div className="lg:hidden flex items-center h-full">
             <button
               onClick={toggleMenu}
               className="inline-flex items-center justify-center p-3 rounded-lg text-gray-700 hover:text-primary hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary transition-colors duration-200"
@@ -117,6 +150,7 @@ const Header = () => {
                 <Link
                   href="/donate"
                   className="block px-4 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-200 text-center shadow-sm"
+                  style={{color: 'white !important'}}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Donate
@@ -127,6 +161,7 @@ const Header = () => {
         )}
       </div>
     </header>
+    </>
   );
 };
 
