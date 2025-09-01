@@ -59,16 +59,16 @@ const Header = () => {
         <div className="flex justify-between items-center h-24">
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-primary hover:no-underline flex items-center space-x-4 h-full">
+            <Link href="/" className="text-primary hover:no-underline flex items-center space-x-3 h-full">
               <Image 
                 src="/hospice-ukiah-icon.png" 
                 alt="Hospice of Ukiah" 
-                width={48} 
-                height={48}
+                width={40} 
+                height={40}
                 className="rounded-lg shadow-sm"
               />
-              <div className="hidden sm:flex items-center h-full">
-                <span className="text-2xl font-serif font-bold text-primary leading-none m-0 p-0" style={{margin: '0', padding: '0', lineHeight: '1'}}>
+              <div className="flex items-center h-full">
+                <span className="text-lg sm:text-2xl font-serif font-bold text-primary leading-none m-0 p-0" style={{margin: '0', padding: '0', lineHeight: '1'}}>
                   Hospice of Ukiah
                 </span>
               </div>

@@ -209,12 +209,27 @@ p {
   line-height: 1.6;
 }
 
-/* Button Override Classes - Highest Specificity */
+/* Button Override Classes - Mobile-First Responsive */
 .hero-button-override {
   color: white !important;
-  font-size: 1.14rem !important; /* 30% bigger than 0.875rem */
-  padding: 0.65rem 1.3rem !important; /* 30% bigger padding */
+  font-size: 0.95rem !important; /* Mobile-friendly size */
+  padding: 0.75rem 1.5rem !important; /* Mobile padding */
   background-color: var(--primary) !important;
+}
+
+/* Tablet and up button scaling */
+@media (min-width: 640px) {
+  .hero-button-override {
+    font-size: 1.1rem !important;
+    padding: 0.8rem 1.6rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-button-override {
+    font-size: 1.14rem !important;
+    padding: 0.65rem 1.3rem !important;
+  }
 }
 
 .hero-button-override:hover {
@@ -228,10 +243,25 @@ p {
 
 .hero-button-secondary-override {
   color: white !important;
-  font-size: 1.14rem !important; /* 30% bigger than 0.875rem */
-  padding: 0.65rem 1.3rem !important; /* 30% bigger padding */
+  font-size: 0.95rem !important; /* Mobile-friendly size */
+  padding: 0.75rem 1.5rem !important; /* Mobile padding */
   background-color: var(--secondary) !important;
   border: 2px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Tablet and up secondary button scaling */
+@media (min-width: 640px) {
+  .hero-button-secondary-override {
+    font-size: 1.1rem !important;
+    padding: 0.8rem 1.6rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-button-secondary-override {
+    font-size: 1.14rem !important;
+    padding: 0.65rem 1.3rem !important;
+  }
 }
 
 .hero-button-secondary-override:hover {
@@ -241,6 +271,31 @@ p {
 
 .hero-button-secondary-override:focus {
   color: white !important;
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 639px) {
+  /* Better mobile text scaling */
+  body {
+    font-size: 15px;
+  }
+  
+  /* Mobile-friendly spacing */
+  .px-4 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  
+  /* Mobile button improvements */
+  button, .btn-primary, .btn-secondary {
+    min-height: 44px; /* iOS touch target minimum */
+    font-size: 1rem !important;
+  }
+  
+  /* Mobile hero text improvements */
+  .text-shadow-md {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  }
 }
 
 /* Utility Classes */

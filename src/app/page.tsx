@@ -3,67 +3,67 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section - WCAG-Compliant & Conversion Optimized */}
-      <section className="relative min-h-[80vh] lg:min-h-[80vh] flex items-center">
-        {/* Background Image - Right-aligned focal point */}
+      {/* Hero Section - Mobile Optimized */}
+      <section className="relative min-h-[70vh] sm:min-h-[80vh] flex items-center">
+        {/* Background Image */}
         <Image
           src="/redwood_clapsed_hands.png"
           alt="Clasped hands among redwood trees, symbolizing compassionate hospice support in nature."
           fill
           priority
           sizes="100vw"
-          className="object-cover object-right-top"
+          className="object-cover object-center sm:object-right-top"
         />
         
-        {/* WCAG-Compliant Overlay - Further brightened for better image visibility */}
-        <div className="absolute inset-0 bg-black/35 lg:bg-black/30"></div>
+        {/* Mobile-Responsive Overlay */}
+        <div className="absolute inset-0 bg-black/50 sm:bg-black/35 lg:bg-black/30"></div>
         
-        {/* Safe Text Area - LEFT 55% ALLOWED */}
-        <div className="relative z-10 w-full h-full flex items-center">
-          <div className="w-[55%] px-8 sm:px-12 lg:px-16 xl:px-20 2xl:px-24 pl-12 sm:pl-16 lg:pl-20 xl:pl-24 2xl:pl-28">
+        {/* Responsive Content Container */}
+        <div className="relative z-10 w-full h-full flex items-center px-4 sm:px-8 lg:px-16">
+          <div className="w-full sm:w-[55%] max-w-4xl">
             
-            {/* Content Layout - Text Only */}
-            <div className="flex flex-col items-start gap-6">
+            {/* Content Layout */}
+            <div className="flex flex-col items-start gap-4 sm:gap-6">
               
-              {/* Text and Buttons Column */}
+              {/* Text Column */}
               <div className="w-full text-left">
-                {/* MASSIVE Headline for 15" Mac */}
-                <h1 className="text-6xl lg:text-8xl xl:text-9xl 2xl:text-[10rem] font-serif font-bold text-white mb-6 leading-tight" 
+                {/* Mobile-First Responsive Headline */}
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl 2xl:text-9xl font-serif font-bold text-white mb-4 sm:mb-6 leading-tight" 
                     style={{
                       color: '#ffffff',
-                      textShadow: '0 2px 4px rgba(0,0,0,0.6)',
+                      textShadow: '0 2px 4px rgba(0,0,0,0.8)',
                       lineHeight: '0.95'
                     }}>
-                  Dignity. Comfort.<br />Peace of Mind.
+                  Dignity.<br className="sm:hidden" /> Comfort.<br />Peace of Mind.
                 </h1>
                 
-                {/* MASSIVE Sub-headline */}
-                <p className="text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-serif font-light text-white mb-10 max-w-prose" 
+                {/* Mobile-Responsive Sub-headline */}
+                <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-serif font-light text-white mb-6 sm:mb-10 max-w-prose" 
                    style={{
                      color: '#ffffff',
-                     textShadow: '0 2px 4px rgba(0,0,0,0.6)',
-                     lineHeight: '1.2'
+                     textShadow: '0 2px 4px rgba(0,0,0,0.8)',
+                     lineHeight: '1.3'
                    }}>
                   Hospice of Ukiah provides compassionate, free end-of-life care for every neighbor in central Mendocino County. <span className="font-medium">Your legacy can keep that promise alive.</span>
                 </p>
                 
-                {/* Small Buttons Relative to Massive Text */}
-                <div className="flex flex-col sm:flex-row gap-4 mb-6">
+                {/* Mobile-Optimized Buttons */}
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6">
                   <a
                     href="/donate"
-                    className="hero-button-override font-bold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary/50 text-center relative group w-fit"
+                    className="hero-button-override font-bold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary/50 text-center relative group w-full sm:w-fit px-6 py-3"
                     aria-label="Donate now—keeps care free"
                     title="100% of gifts stay local"
                   >
                     Donate Now
-                    {/* Microcopy tooltip */}
-                    <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+                    {/* Mobile-friendly tooltip */}
+                    <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap hidden sm:block">
                       100% of gifts stay local
                     </span>
                   </a>
                   <a
                     href="/legacy"
-                    className="hero-button-secondary-override font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-secondary/50 text-center w-fit"
+                    className="hero-button-secondary-override font-semibold rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-secondary/50 text-center w-full sm:w-fit px-6 py-3"
                     aria-label="Plan your legacy gift to ensure lasting impact"
                   >
                     Plan Your Legacy
@@ -73,8 +73,8 @@ export default function Home() {
             </div>
           </div>
           
-          {/* RIGHT 45% COMPLETELY EMPTY - RESERVED FOR IMAGE */}
-          <div className="w-[45%] h-full"></div>
+          {/* Desktop Image Space - Hidden on Mobile */}
+          <div className="hidden sm:block sm:w-[45%] h-full"></div>
         </div>
       </section>
 
