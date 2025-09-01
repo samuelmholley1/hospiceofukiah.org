@@ -6,7 +6,7 @@ export default function GriefSupport() {
       {/* Hero Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-neutral-bg to-white relative">
         {/* Background image */}
-        <div className="absolute inset-0 opacity-30">
+        <div className="absolute inset-0 opacity-75">
           <Image
             src="/pexel downloads/pexels-diva-plavalaguna-6150657.jpg"
             alt="Peaceful support and healing"
@@ -14,7 +14,7 @@ export default function GriefSupport() {
             className="object-cover"
           />
         </div>
-        <div className="absolute inset-0 bg-white/70"></div>
+        <div className="absolute inset-0 bg-white/40"></div>
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8">
             Grief & Spiritual Support
