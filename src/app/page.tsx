@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center">
+      <section className="relative h-screen lg:h-screen min-h-[70vh] flex items-center">
         {/* Background Image */}
         <Image
           src="/redwood_clapsed_hands.png"
@@ -12,47 +12,36 @@ export default function Home() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center"
+          className="object-cover object-center lg:object-bottom"
         />
         
-        {/* Overlay for better text contrast */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/20 lg:from-black/70 lg:via-black/30 lg:to-transparent"></div>
+        {/* Subtle left-to-right dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/20"></div>
         
         {/* Content Overlay - Left Side */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="max-w-2xl">
-            {/* Logo */}
-            <div className="flex justify-start mb-8">
-              <Image 
-                src="/hospice-ukiah-icon.png" 
-                alt="Hospice of Ukiah" 
-                width={100} 
-                height={100}
-                className="rounded-xl shadow-2xl"
-              />
-            </div>
-            
+          <div className="max-w-2xl text-center lg:text-left">
             {/* Heading */}
-            <h1 className="text-4xl lg:text-6xl font-serif font-bold text-white mb-6 text-shadow-lg">
+            <h1 className="text-5xl font-bold text-white mb-6 text-shadow-lg">
               Hospice of Ukiah
             </h1>
             
             {/* Subheading */}
-            <h2 className="text-xl lg:text-3xl font-serif font-light text-white/95 mb-8 leading-relaxed text-shadow-md">
+            <h2 className="text-xl text-gray-100 mb-8 leading-relaxed text-shadow-md">
               Compassionate End-of-Life Care, Free of Charge
             </h2>
             
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
                 href="/donate"
-                className="btn-primary text-lg px-8 py-4 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary/30"
+                className="bg-[#B04155] hover:bg-[#9a3849] text-white font-bold text-lg px-10 py-5 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#B04155]/30"
               >
                 Donate Now
               </a>
               <a
                 href="/about"
-                className="btn-secondary text-lg px-8 py-4 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-secondary/30 border-2 border-white/20"
+                className="bg-[#8C8DBF] hover:bg-[#7a7baa] text-white font-semibold text-lg px-10 py-5 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#8C8DBF]/30"
               >
                 Learn More
               </a>

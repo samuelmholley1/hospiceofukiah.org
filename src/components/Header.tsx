@@ -24,48 +24,52 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-24">
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-primary hover:no-underline flex items-center space-x-3">
+            <Link href="/" className="text-primary hover:no-underline flex items-center space-x-4">
               <Image 
                 src="/hospice-ukiah-icon.png" 
                 alt="Hospice of Ukiah" 
-                width={40} 
-                height={40}
-                className="rounded-lg"
+                width={48} 
+                height={48}
+                className="rounded-lg shadow-sm"
               />
-              <h1 className="text-2xl font-serif font-bold text-primary mb-0">
-                Hospice of Ukiah
-              </h1>
+              <div className="hidden sm:block">
+                <h1 className="text-2xl font-serif font-bold text-primary leading-tight">
+                  Hospice of Ukiah
+                </h1>
+              </div>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
+          <nav className="hidden lg:flex items-center space-x-1">
             {navigation.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 hover:text-primary font-medium transition-colors duration-200 py-2 px-3 rounded-lg hover:bg-gray-50"
+                className="text-gray-700 hover:text-primary font-medium transition-colors duration-200 py-3 px-4 rounded-lg hover:bg-gray-50"
               >
                 {link.name}
               </Link>
             ))}
             {/* Donate Button - Special styling */}
-            <Link
-              href="/donate"
-              className="btn-primary hover:no-underline inline-block ml-4"
-            >
-              Donate
-            </Link>
+            <div className="ml-6">
+              <Link
+                href="/donate"
+                className="bg-primary hover:bg-primary/90 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md"
+              >
+                Donate
+              </Link>
+            </div>
           </nav>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
+              className="inline-flex items-center justify-center p-3 rounded-lg text-gray-700 hover:text-primary hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary transition-colors duration-200"
               aria-label="Open menu"
               aria-expanded={isMenuOpen}
             >
@@ -97,8 +101,8 @@ const Header = () => {
 
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-4 pt-4 pb-6 space-y-2 bg-white border-t border-gray-100 shadow-lg">
+          <div className="lg:hidden">
+            <div className="px-4 pt-4 pb-6 space-y-2 bg-white border-t border-gray-100 shadow-lg rounded-b-lg">
               {navigation.map((link) => (
                 <Link
                   key={link.href}
@@ -109,10 +113,10 @@ const Header = () => {
                   {link.name}
                 </Link>
               ))}
-              <div className="pt-2">
+              <div className="pt-4 border-t border-gray-100">
                 <Link
                   href="/donate"
-                  className="block px-4 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-200 text-center"
+                  className="block px-4 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-200 text-center shadow-sm"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Donate
