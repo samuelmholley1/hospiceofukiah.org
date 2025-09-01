@@ -174,7 +174,7 @@ export default function About() {
             <div className="bg-neutral-bg rounded-lg p-6 text-center">
               <div className="relative aspect-square rounded-full overflow-hidden mx-auto mb-4 w-20 h-20">
                 <Image
-                  src="/pexel downloads/pexels-ron-lach-8527647.jpg"
+                  src="/pexel downloads/pexels-hanafi-mellek-886604527-32166712.jpg"
                   alt="Community volunteers"
                   fill
                   className="object-cover"
@@ -187,7 +187,7 @@ export default function About() {
             <div className="bg-neutral-bg rounded-lg p-6 text-center">
               <div className="relative aspect-square rounded-full overflow-hidden mx-auto mb-4 w-20 h-20">
                 <Image
-                  src="/pexel downloads/pexels-shkrabaanthony-7345467.jpg"
+                  src="/pexel downloads/pexels-tima-miroshnichenko-8376243.jpg"
                   alt="Professional healthcare"
                   fill
                   className="object-cover"
@@ -200,7 +200,7 @@ export default function About() {
             <div className="bg-neutral-bg rounded-lg p-6 text-center">
               <div className="relative aspect-square rounded-full overflow-hidden mx-auto mb-4 w-20 h-20">
                 <Image
-                  src="/pexel downloads/pexels-pavel-danilyuk-6753450.jpg"
+                  src="/pexel downloads/pexels-olly-3768131.jpg"
                   alt="Healthcare collaboration"
                   fill
                   className="object-cover"
@@ -224,7 +224,7 @@ export default function About() {
             <div className="relative order-2 lg:order-1">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/pexel downloads/pexels-kampus-7551646.jpg"
+                  src="/pexel downloads/pexels-jsme-mila-523821574-18271866.jpg"
                   alt="Our interdisciplinary healthcare team"
                   fill
                   className="object-cover"
@@ -333,7 +333,7 @@ export default function About() {
             <div className="bg-neutral-bg rounded-2xl shadow-lg overflow-hidden">
               <div className="h-64 relative">
                 <Image
-                  src="/pexel downloads/pexels-ron-lach-8527647.jpg"
+                  src="/pexel downloads/pexels-shvets-production-8900025.jpg"
                   alt="Compassionate care and comfort"
                   fill
                   className="object-cover"
@@ -353,7 +353,7 @@ export default function About() {
             <div className="bg-neutral-bg rounded-2xl shadow-lg overflow-hidden">
               <div className="h-64 relative">
                 <Image
-                  src="/pexel downloads/pexels-kampus-7551646.jpg"
+                  src="/pexel downloads/pexels-shkrabaanthony-7345456.jpg"
                   alt="Holistic healthcare approach"
                   fill
                   className="object-cover"
@@ -373,7 +373,7 @@ export default function About() {
             <div className="bg-neutral-bg rounded-2xl shadow-lg overflow-hidden">
               <div className="h-64 relative">
                 <Image
-                  src="/pexel downloads/pexels-pavel-danilyuk-6753450.jpg"
+                  src="/pexel downloads/pexels-hannah-barata-776560167-27865295.jpg"
                   alt="Community support and collaboration"
                   fill
                   className="object-cover"

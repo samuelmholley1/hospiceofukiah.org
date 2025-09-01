@@ -124,7 +124,7 @@ export default function Volunteer() {
               <div className="relative">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/pexel downloads/pexels-ron-lach-8527647.jpg"
+                    src="/pexel downloads/pexels-jsme-mila-523821574-18429371.jpg"
                     alt="Volunteer providing compassionate respite care"
                     fill
                     className="object-cover"
@@ -201,7 +201,7 @@ export default function Volunteer() {
             <div className="relative order-2 lg:order-1">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/pexel downloads/pexels-pavel-danilyuk-6753450.jpg"
+                  src="/pexel downloads/pexels-jsme-mila-523821574-18459247.jpg"
                   alt="Volunteers using special skills to help"
                   fill
                   className="object-cover"

@@ -327,41 +327,51 @@ export default function Home() {
             Voices from Our Community
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="bg-primary/5 rounded-2xl p-8 border-l-4 border-primary relative">
-              {/* Background image for emotional context */}
-              <div className="absolute top-4 right-4 w-16 h-16 rounded-full overflow-hidden opacity-20">
-                <Image
-                  src="/pexel downloads/pexels-ron-lach-8527647.jpg"
-                  alt="Family support"
-                  fill
-                  className="object-cover"
-                />
+          <div className="space-y-16">
+            {/* First Testimonial - Photo Left, Text Right */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div className="relative order-2 lg:order-1">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                  <Image
+                    src="/pexel downloads/pexels-kampus-7551633.jpg"
+                    alt="Family receiving compassionate hospice support"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
-              <blockquote className="text-xl italic text-gray-800 mb-6 leading-relaxed relative z-10">
-                &ldquo;Hospice of Ukiah gave us the gift of time—time to say goodbye properly, 
-                time to share stories, time to love without the burden of medical bills. 
-                Their care allowed us to focus on what truly mattered.&rdquo;
-              </blockquote>
-              <p className="text-lg font-semibold text-primary">— Sarah M., Grateful Family Member</p>
+              
+              <div className="bg-primary/5 rounded-2xl p-8 border-l-4 border-primary order-1 lg:order-2">
+                <blockquote className="text-xl italic text-gray-800 mb-6 leading-relaxed">
+                  &ldquo;Hospice of Ukiah gave us the gift of time—time to say goodbye properly, 
+                  time to share stories, time to love without the burden of medical bills. 
+                  Their care allowed us to focus on what truly mattered.&rdquo;
+                </blockquote>
+                <p className="text-lg font-semibold text-primary">— Sarah M., Grateful Family Member</p>
+              </div>
             </div>
 
-            <div className="bg-secondary/5 rounded-2xl p-8 border-l-4 border-secondary relative">
-              {/* Background image for care context */}
-              <div className="absolute top-4 right-4 w-16 h-16 rounded-full overflow-hidden opacity-20">
-                <Image
-                  src="/pexel downloads/pexels-pavel-danilyuk-6753450.jpg"
-                  alt="Compassionate care"
-                  fill
-                  className="object-cover"
-                />
+            {/* Second Testimonial - Text Left, Photo Right */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div className="bg-secondary/5 rounded-2xl p-8 border-l-4 border-secondary">
+                <blockquote className="text-xl italic text-gray-800 mb-6 leading-relaxed">
+                  &ldquo;The compassion and professionalism of the entire team made an impossible 
+                  time bearable. They treated my father—and our whole family—with such dignity 
+                  and grace.&rdquo;
+                </blockquote>
+                <p className="text-lg font-semibold text-primary">— Michael R., Community Member</p>
               </div>
-              <blockquote className="text-xl italic text-gray-800 mb-6 leading-relaxed relative z-10">
-                &ldquo;The compassion and professionalism of the entire team made an impossible 
-                time bearable. They treated my father—and our whole family—with such dignity 
-                and grace.&rdquo;
-              </blockquote>
-              <p className="text-lg font-semibold text-primary">— Michael R., Community Member</p>
+              
+              <div className="relative">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                  <Image
+                    src="/pexel downloads/pexels-shvets-production-7176325.jpg"
+                    alt="Professional healthcare team providing dignified care"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

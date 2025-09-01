@@ -75,7 +75,7 @@ export default function Services() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/pexel downloads/pexels-kampus-7551646.jpg"
+                  src="/pexel downloads/pexels-jsme-mila-523821574-18459193.jpg"
                   alt="Compassionate hospice care team providing comfort"
                   fill
                   className="object-cover"
@@ -155,18 +155,16 @@ export default function Services() {
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/pexel downloads/pexels-ron-lach-8527647.jpg"
-                  alt="Family caregivers receiving support and education"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-            
-            <div>
+              <div className="relative">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                  <Image
+                    src="/pexel downloads/pexels-jsme-mila-523821574-16364307.jpg"
+                    alt="Family caregivers receiving support and education"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>            <div>
               <div className="bg-secondary/5 border-l-4 border-secondary rounded-r-lg p-6">
                 <h3 className="text-xl font-bold text-primary mb-4">
                   Can family caregivers handle it?
@@ -275,7 +273,7 @@ export default function Services() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/pexel downloads/pexels-pavel-danilyuk-6753450.jpg"
+                  src="/pexel downloads/pexels-kampus-8441852.jpg"
                   alt="Community impact and healthcare professionals collaborating"
                   fill
                   className="object-cover"
