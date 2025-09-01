@@ -8,7 +8,7 @@ export default function GriefSupport() {
         {/* Background image */}
         <div className="absolute inset-0 opacity-75">
           <Image
-            src="/pexel downloads/pexels-diva-plavalaguna-6150657.jpg"
+            src="/pexel downloads/pexels-olly-3768131.jpg"
             alt="Peaceful support and healing"
             fill
             className="object-cover"
