@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#ae485e',      // Maroon Rose (official brand)
+        primary: '#c94a65',      // Brighter Maroon Rose (enhanced for better contrast)
         secondary: '#abb0d3',    // Lavender (official brand)
-        accent: '#ae485e',       // Using primary for accent
+        accent: '#c94a65',       // Using brighter primary for accent
         'neutral-bg': '#feffff', // Off-white neutral background
         text: '#333333',         // Charcoal text
       },

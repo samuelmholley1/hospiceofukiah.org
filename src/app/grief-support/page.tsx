@@ -20,10 +20,10 @@ export default function GriefSupport() {
             Grief & Spiritual Support
           </h1>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-serif text-secondary mb-6">
+            <h2 className="text-2xl md:text-3xl font-serif font-semibold text-gray-900 mb-6">
               Support for Grieving Hearts – You are not alone
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-800 leading-relaxed font-medium">
               Hospice of Ukiah offers bereavement and spiritual support to anyone in the community 
               coping with the loss of a loved one or the emotional/spiritual challenges of serious illness.
             </p>

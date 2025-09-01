@@ -84,10 +84,10 @@ export default function Volunteer() {
             Volunteer with Us
           </h1>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-serif text-secondary mb-8">
+            <h2 className="text-2xl md:text-3xl font-serif font-semibold text-gray-900 mb-8">
               Become a Hospice of Ukiah Volunteer – Make a Difference in Someone&apos;s Life
             </h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-800 leading-relaxed font-medium">
               Volunteers are the lifeblood of our hospice. As a volunteer, you can bring comfort, help, 
               and hope to neighbors in need. Whether you have just a few hours a month or several hours 
               a week, your contribution can be life-changing for a family (and deeply rewarding for you).
