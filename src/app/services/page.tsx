@@ -1,9 +1,20 @@
+import Image from 'next/image';
+
 export default function Services() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-neutral-bg to-white">
-        <div className="max-w-5xl mx-auto text-center">
+      <section className="py-20 px-4 bg-gradient-to-b from-neutral-bg to-white relative">
+        {/* Background image */}
+        <div className="absolute inset-0 opacity-10">
+          <Image
+            src="/pexel downloads/pexels-shvets-production-7176325.jpg"
+            alt="Professional healthcare team"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="max-w-5xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8">
             Our Services
           </h1>

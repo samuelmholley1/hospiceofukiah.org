@@ -256,20 +256,31 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* 100% Free Services */}
-            <div className="bg-neutral-bg rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center">
-              <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-8">
-                <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
-                </svg>
+            <div className="bg-neutral-bg rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-shadow duration-300 text-center relative overflow-hidden">
+              {/* Subtle background image */}
+              <div className="absolute inset-0 opacity-5">
+                <Image
+                  src="/pexel downloads/pexels-kampus-7551633.jpg"
+                  alt="Healthcare support"
+                  fill
+                  className="object-cover"
+                />
               </div>
-              <h3 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-6">
-                100% Free Services
-              </h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Every family receives complete hospice care at no cost—medical equipment, 
-                nursing visits, medications, and 24/7 support. Your financial situation 
-                never determines your care.
-              </p>
+              <div className="relative z-10">
+                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-8">
+                  <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-6">
+                  100% Free Services
+                </h3>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Every family receives complete hospice care at no cost—medical equipment, 
+                  nursing visits, medications, and 24/7 support. Your financial situation 
+                  never determines your care.
+                </p>
+              </div>
             </div>
 
             {/* Care Beyond Limits */}
@@ -317,8 +328,17 @@ export default function Home() {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="bg-primary/5 rounded-2xl p-8 border-l-4 border-primary">
-              <blockquote className="text-xl italic text-gray-800 mb-6 leading-relaxed">
+            <div className="bg-primary/5 rounded-2xl p-8 border-l-4 border-primary relative">
+              {/* Background image for emotional context */}
+              <div className="absolute top-4 right-4 w-16 h-16 rounded-full overflow-hidden opacity-20">
+                <Image
+                  src="/pexel downloads/pexels-ron-lach-8527647.jpg"
+                  alt="Family support"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <blockquote className="text-xl italic text-gray-800 mb-6 leading-relaxed relative z-10">
                 &ldquo;Hospice of Ukiah gave us the gift of time—time to say goodbye properly, 
                 time to share stories, time to love without the burden of medical bills. 
                 Their care allowed us to focus on what truly mattered.&rdquo;
@@ -326,8 +346,17 @@ export default function Home() {
               <p className="text-lg font-semibold text-primary">— Sarah M., Grateful Family Member</p>
             </div>
 
-            <div className="bg-secondary/5 rounded-2xl p-8 border-l-4 border-secondary">
-              <blockquote className="text-xl italic text-gray-800 mb-6 leading-relaxed">
+            <div className="bg-secondary/5 rounded-2xl p-8 border-l-4 border-secondary relative">
+              {/* Background image for care context */}
+              <div className="absolute top-4 right-4 w-16 h-16 rounded-full overflow-hidden opacity-20">
+                <Image
+                  src="/pexel downloads/pexels-pavel-danilyuk-6753450.jpg"
+                  alt="Compassionate care"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <blockquote className="text-xl italic text-gray-800 mb-6 leading-relaxed relative z-10">
                 &ldquo;The compassion and professionalism of the entire team made an impossible 
                 time bearable. They treated my father—and our whole family—with such dignity 
                 and grace.&rdquo;

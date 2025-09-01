@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Volunteer() {
   const [formData, setFormData] = useState({
@@ -67,8 +68,17 @@ export default function Volunteer() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-neutral-bg to-white">
-        <div className="max-w-5xl mx-auto text-center">
+      <section className="py-20 px-4 bg-gradient-to-b from-neutral-bg to-white relative">
+        {/* Background image */}
+        <div className="absolute inset-0 opacity-10">
+          <Image
+            src="/pexel downloads/pexels-vlada-karpovich-5790718.jpg"
+            alt="Volunteer helping in community"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="max-w-5xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8">
             Volunteer with Us
           </h1>

@@ -1,9 +1,20 @@
+import Image from 'next/image';
+
 export default function About() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-neutral-bg to-white">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="py-20 px-4 bg-gradient-to-b from-neutral-bg to-white relative">
+        {/* Background image */}
+        <div className="absolute inset-0 opacity-10">
+          <Image
+            src="/pexel downloads/pexels-kampus-8949831.jpg"
+            alt="Community healthcare support"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8">
             About Us
           </h1>
@@ -316,6 +327,77 @@ export default function About() {
               <p className="text-gray-600 italic">
                 *Our board and advisors ensure we stay true to our mission and sustain our services for the community.*
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Care in Action */}
+      <section className="py-20 px-4 bg-neutral-bg">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-16 text-center">
+            Our Care in Action
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Professional Care */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/pexel downloads/pexels-kampus-7551683.jpg"
+                  alt="Professional medical care"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-serif font-bold text-primary mb-3">
+                  Professional Medical Care
+                </h3>
+                <p className="text-gray-700">
+                  Our skilled medical team provides comprehensive care with dignity and expertise.
+                </p>
+              </div>
+            </div>
+
+            {/* Emotional Support */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/pexel downloads/pexels-shkrabaanthony-7345461.jpg"
+                  alt="Emotional and spiritual support"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-serif font-bold text-primary mb-3">
+                  Emotional & Spiritual Support
+                </h3>
+                <p className="text-gray-700">
+                  We care for the whole person, addressing emotional and spiritual needs alongside physical care.
+                </p>
+              </div>
+            </div>
+
+            {/* Family Support */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/pexel downloads/pexels-tima-miroshnichenko-8376243.jpg"
+                  alt="Family support and guidance"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-serif font-bold text-primary mb-3">
+                  Family Support
+                </h3>
+                <p className="text-gray-700">
+                  We support the entire family through difficult times, providing guidance and comfort.
+                </p>
+              </div>
             </div>
           </div>
         </div>

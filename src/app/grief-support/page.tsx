@@ -1,9 +1,20 @@
+import Image from 'next/image';
+
 export default function GriefSupport() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-neutral-bg to-white">
-        <div className="max-w-5xl mx-auto text-center">
+      <section className="py-20 px-4 bg-gradient-to-b from-neutral-bg to-white relative">
+        {/* Background image */}
+        <div className="absolute inset-0 opacity-8">
+          <Image
+            src="/pexel downloads/pexels-olly-3768131.jpg"
+            alt="Peaceful healing environment"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="max-w-5xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8">
             Grief & Spiritual Support
           </h1>
